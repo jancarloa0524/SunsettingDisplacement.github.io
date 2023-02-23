@@ -1,1 +1,29 @@
+body {
+    font: 20px Montserrat, sans-serif;
+    background-color: darkolivegreen;
+}
 
+#mission {
+    background-color:olive;
+    color: white;
+    padding: 20px;
+}
+
+#discover {
+    background-color:darkolivegreen;
+    color: white;
+    padding: 20px
+}
+
+#footer {
+    background-color:darkslategray
+}
+
+
+.row {
+    padding: 5px 0px 10px 0px;
+}
+
+.nav {
+    padding: 10px;
+}
