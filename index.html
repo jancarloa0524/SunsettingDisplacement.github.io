@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Sunsetting Displacement</title>
-  
+    <style>
+      #mission {
+          background-color:olive;
+          color: white;
+          padding: 20px;
+      }
+
+      #discover {
+          background-color:darkolivegreen;
+          color: white;
+          padding: 20px
+      }
+    </style>
 </head>
 <body>
     <!--NavBar-->
@@ -24,50 +35,57 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Statistics</a>
+                <a class="nav-link" aria-current="page" href="pages/stats.html">Statistics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Resources</a>
+                <a class="nav-link" aria-current="page" href="pages/resources.html">Resources</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+                <a class="nav-link" aria-current="page" href="pages/about.html">About</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://via.placeholder.com/1920x600.png?text=Slide+1" class="d-block w-100" alt="...">
+            <img src="img/development.jpg" class="d-block w-100" alt="..." style="object-fit: cover; width: 100%; height: 600px">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Sunsetting displacement? It takes a village.</h5>
+              <h5 class="fst-italic fs-1"><span style="background-color: black;">Sunsetting displacement? It takes a village.</span></h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://via.placeholder.com/1920x600.png?text=Slide+2" class="d-block w-100" alt="...">
+            <img src="img/wyndham.jpg" class="d-block w-100" alt="..." style="object-fit: cover; width: 100%; height: 600px">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Sunsetting displacement? It takes a village.</h5>
+              <h5 class="fst-italic fs-1"> <span style="background-color: black;">Sunsetting displacement? It takes a village.</span></h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://via.placeholder.com/1920x600.png?text=Slide+3" class="d-block w-100" alt="...">
+            <img src="img/industry_city.jpg" class="d-block w-100" alt="..." style="object-fit: cover; width: 100%; height: 600px">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Sunsetting displacement? It takes a village.</h5>
+              <h5 class="fst-italic fs-1"><span style="background-color: black;">Sunsetting displacement? It takes a village.</span></h5>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid" id="mission">
+      <div class="container-fluid text-start" id="mission">
         <!--Quick Stats here-->
         <div class="container-md">
-          <h3>Mission Statement:</h3>
-        <p>In order to make change, people need to be aware of why that change is necessary. Many Sunset Park residents either do not know about Gentrification, or aren't sure how they would be affected by it. To put it simply, Gentrification in Sunset Park has resulted in <a href="https://www.nyc.gov/assets/doh/downloads/pdf/data/2018chp-bk7.pdf" class="link-light">over 50% of residents struggling to pay rent</a>, and many people being displaced from their homes.</p>
+          <h3 class="display-3">Mission Statement:</h3>
+        <p class="lead">In order to make change, people need to be aware of why that change is necessary. Many Sunset Park residents either do not know about Gentrification, or aren't sure how they would be affected by it. To put it simply, Gentrification in Sunset Park has resulted in <a href="https://www.nyc.gov/assets/doh/downloads/pdf/data/2018chp-bk7.pdf" class="link-light">over 50% of residents struggling to pay rent</a>, and many people being displaced from their homes.</p>
+        <p>To find out more about Sunset Park residents and the statistics on what is happening, check our our <a class="link-light" href="pages/stats.html">statistics!</a></p>
         </div>
       </div>
-      <div class="container-fluid" id="discover">
+
+      <div class="container-fluid text-center" id="discover">
         <div class="container-md">
           <!--Quick Resources here-->
           <h3>Discover Resources:</h3>
@@ -78,11 +96,13 @@
                     <!--Events-->
                     <h5>Check Out...</h5>
                     <a href="https://www.instagram.com/plazatonatiuh/?hl=en"><img src="img/plaza_tonutiah.jpg" class="img-thumbnail" width="225" height="225"></a>
+                    <p><i>Plaza de Tonutiah!</i></p>
                   </div>
                   <div class="col-sm-4">
                     <!--Orgs-->
                     <h5>Be a Part Of...</h5>
                     <a href="https://www.uprose.org/"><img src="img/UPROSEfistlogo.png" class="img-thumbnail" width="225" height="225"></a>
+                    <p><i>Uprose, and organization fighting for change in Sunset Park!</i></p>
                   </div>
                   <div class="col-sm-4">
                     <!--Petition-->
@@ -93,30 +113,27 @@
                 
                 <div class="row">
                   <div class="col-sm">
-                    <a href="" class="link-light">Check out more!</a>
+                    <a href="pages/resources.html" class="link-light">Check out more!</a>
                   </div>
                 </div>
               </div>
             </div>
         </div>
       </div>
-      <div class="container-fluid" id="footer">
+      <div class="container-fluid footer">
         <!--Footer-->
         <ul class="nav justify-content-center nav-fill">
             <li class="nav-item">
               <a class="nav-link active link-light" aria-current="page" href="#">Homepage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-light" href="#">Statistics</a>
+              <a class="nav-link link-light" href="pages/stats.html">Statistics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-light" href="#">Resources</a>
+              <a class="nav-link link-light" href="pages/resources.html">Resources</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-light" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-light" href="#">Contact</a>
+              <a class="nav-link link-light" href="pages/about.html">About</a>
             </li>
           </ul>
       </div>

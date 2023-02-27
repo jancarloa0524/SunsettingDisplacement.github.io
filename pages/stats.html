@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Statistics</title>
+    <style>
+      #definition {
+        background-color: olivedrab;
+        color: white;
+        padding: 20px
+    }
+
+    #stats {
+        background-color: olive;
+        color: white;
+        padding: 20px
+    }
+    </style>
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sunsetting Gentrification</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Statistics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="definition">
+        <h6 class="display-6"> What is Gentrification?</h6>
+        <p class="lead">The process of a neighborhood improving properties, businesses, and public services, usually due to wealthier residents moving in, which typically displaces current residents. </p>
+        <!-- Button trigger modal -->
+        <div class="text-center">
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            What Are the Field Stats?
+          </button>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade text-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: black;">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Field Stats</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>I collected a total of <span style="color: olive;">125 responses</span>, used to represent <span style="color: olive;">Sunset Park's population of 132,721 residents.</span> I used a <span style="color: olive;">95% confidence interval</span> to get a <span style="color: olive;">+/-8.7% margin of error.</span> This data was collected over the span of a week from only Sunset Park residents through multiple methods, such as random sampling, distributing surveys in the workplace, and through family and friends.</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Awesome!</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center" id="stats">
+      <h6 class="display-6 fw-semibold"> Statistical Analysis</h6>
+      <div class="row align-items-center" id="stat1">
+        <div class="col-7 text-end">
+          <img src="../img/figure1.png" class="img-fluid rounded">
+        </div>
+        <div class="col-5 text-start">
+          <p class="lh-lg fs-5">Sunset Park's housing costs and job opportunities are a lacking interest in the community, with family and friends being in the lead at 67.2%. Even with big business like Amazon entering Sunset Park, it hasn't raised much interest in job opportunities.</p>
+        </div>
+      </div>
+      <div class="row align-items-center" id="stat2">
+        <div class="col-5 text-end">
+          <p class="lh-lg fs-5">As the income of Sunset Park residents decreased, there is clearly a higher number of residents who were only made aware of gentrification at the time of surveying. While most of the people surveyed were aware of gentrification, a large amount of them, about 34.4%, still are not aware that it existed until the time of surveying.</p>
+        </div>
+        <div class="col-7 text-start" id="stat3">
+          <img src="../img/figure2.png" class="img-fluid rounded">
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-7 text-end">
+          <img src="../img/figure3.png" class="img-fluid rounded">
+        </div>
+        <div class="col-5 text-start">
+          <p class="lh-lg fs-5">While many residents agree that they would be negatively impacted by gentrification, a large number of them still aren't sure or feel they won't be impacted by gentrification. What's even more worrying is that this especailly seems to be the case for people who noticed increases in their rent, who very well could be impacted by gentrification given time for development in the neighborhood.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid footer">
+        <!--Footer-->
+        <ul class="nav justify-content-center nav-fill">
+            <li class="nav-item">
+              <a class="nav-link link-light" aria-current="page" href="../index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link-light" href="#">Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="about.html">About</a>
+            </li>
+          </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>

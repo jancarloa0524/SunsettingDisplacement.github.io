@@ -1,24 +1,6 @@
-body {
-    font: 20px Montserrat, sans-serif;
-    background-color: darkolivegreen;
-}
-
-#mission {
-    background-color:olive;
-    color: white;
-    padding: 20px;
-}
-
-#discover {
-    background-color:darkolivegreen;
-    color: white;
-    padding: 20px
-}
-
-#footer {
+.footer {
     background-color:darkslategray
 }
-
 
 .row {
     padding: 5px 0px 10px 0px;
